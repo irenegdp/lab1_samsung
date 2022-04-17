@@ -13,5 +13,13 @@ export class Mail {
     set direccion(direccion: string) {
         this._direccion = direccion;
     }
+
+    get tipo(){
+        return this._tipo;
+    }
+
+    get direccion(){
+        return this._direccion;
+    }
 }
 

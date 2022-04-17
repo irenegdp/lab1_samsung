@@ -2,6 +2,7 @@ import { Telefono } from "./telefono";
 import { Mail } from "./mail";
 import { Direccion } from "./direccion";
 
+
 export class Persona{
     private _nombre:string;
     private _apellidos:string;
@@ -46,17 +47,84 @@ export class Persona{
 
     }
 
-    get_nombre() {
+    get nombre() {
         return this._nombre;
       }
+    set nombre (nombre:string){
+        this._nombre = nombre
+    }
+    get apellidos(){
+        return this._apellidos;
+    }
+    set apellidos (apellidos:string){
+        this._apellidos = apellidos
+    }
+    get edad(){
+        return this._edad;
+    }
+    set edad (edad:number){
+        this._edad = edad
+    }
     
-    get_DNI(){
+    get DNI(){
         return this._DNI;
+    }
+    set DNI (DNI:string){
+        this._DNI = DNI
+    }
+    get cumple(){
+        return this._cumple;
+    }
+    set cumple (cumple:Date){
+        this._cumple = cumple
+    }
+    get colorFav(){
+        return this._colorFav;
+    }
+    set colorFav (colorFav:string){
+        this._colorFav = colorFav
+    }
+    get sexo(){
+        return this._sexo;
+    }
+    set sexo (sexo:string){
+        this._sexo = sexo
+    }
+    get direcciones(){
+        return this._direcciones;
+    }
+    set direcciones (direcciones:Array<Direccion>){
+        this._direcciones = direcciones
+    }
+    get mails(){
+        return this._mails;
+    }
+    set mails (mails:Array<Mail>){
+        this._mails = mails
+    }
+    get telefonos(){
+        return this._telefonos;
+    }
+    set telefonos (telefonos:Array<Telefono>){
+        this._telefonos = telefonos
+    }
+    get notas(){
+        return this._notas;
+    }
+    set notas (notas:string){
+        this._notas = notas
     }
 
     add_direccion(direccion:Direccion){
         this._direcciones.push(direccion)
     }
 
+    add_mail(mail:Mail){
+        this._mails.push(mail)
+    }
+
+    add_telefono(telefono:Telefono){
+        this._telefonos.push(telefono)
+    }
 }
 

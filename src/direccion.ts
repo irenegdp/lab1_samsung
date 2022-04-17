@@ -24,4 +24,49 @@ export class Direccion {
         this._poblacion = poblacion;
         this._provincia = provincia;
     }
+
+    get calle(){
+        return this._calle;
+    }
+    get numero(){
+        return this._numero;
+    }
+    get piso(){
+        return this._piso;
+    }
+    get letra(){
+        return this._letra;
+    }
+    get cp(){
+        return this._cp;
+    }
+    get poblacion(){
+        return this._poblacion;
+    }
+    get provincia(){
+        return this._provincia;
+    }
+
+    set calle(calle:string){
+        this._calle = calle
+    }
+    set numero(numero:number){
+        this._numero = numero
+    }
+    set piso(piso:number){
+        this._piso = piso
+    }
+    set letra(letra:string){
+        this._letra = letra
+    }
+    set cp(cp:string){
+        this._cp = cp
+    }
+    set poblacion(poblacion:string){
+        this._poblacion = poblacion
+    }
+    set provincia(provincia:string){
+        this._provincia = provincia
+    }
+
 }
